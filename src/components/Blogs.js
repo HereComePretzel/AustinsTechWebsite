@@ -1,52 +1,48 @@
 import React from 'react'
+import { Grid } from 'semantic-ui-react'
 import download from '../images/download.jpeg'
+import BeBlog from '../blogs/BeBlog'
+import BiBlog from '../blogs/BiBlog'
+import BreatheBlog from '../blogs/BreatheBlog'
+import DriveBlog from '../blogs/DriveBlog'
+import FailBlog from '../blogs/FailBlog'
+import OBlog from '../blogs/OBlog'
+import SoftyBlog from '../blogs/SoftyBlog'
+import TeamBlog from '../blogs/TeamBlog'
 
 
 function Blogs() {
     return(
-    <div>
-        <div>Blogs</div>
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/o-dc8aad5c6f3a'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/drive-d13dd96e5399'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/softy-c6330e04d32a'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/team-9cfd4565f4b2'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/fail-5e875e93429d'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/bi-3fe7e171ca79'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/be-7e514d3dfcd5'><img src={download}/></a>
-            
-        <a 
-        target='_blank'
-        className='ui medium image'
-        href='https://austinoie.medium.com/breathe-225bdc553db7'><img src={download}/></a>
-            
-    </div>
+    <Grid>
+        <Grid.Row className='grid row'>
+            <Grid.Column width={3}>
+                <BeBlog />
+            </Grid.Column>
+            <Grid.Column width={3}>
+                <BiBlog />
+            </Grid.Column>
+            <Grid.Column width={3}>
+                <BreatheBlog />
+            </Grid.Column >
+            <Grid.Column width={3}>
+                <DriveBlog />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={3}>
+                <FailBlog />
+            </Grid.Column>
+            <Grid.Column width={3}>
+                <OBlog />
+            </Grid.Column>
+            <Grid.Column width={3}>
+                <TeamBlog />
+            </Grid.Column >
+            <Grid.Column width={3}>
+                <SoftyBlog />
+            </Grid.Column>
+        </Grid.Row>
+    </Grid>
     )
 }
 

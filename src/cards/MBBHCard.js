@@ -8,7 +8,7 @@ function MBBHCard() {
                 <div class="image">
                     <img src={download}/>
                 </div>
-                    <div class="content">
+                    <div class="content" style={{textAlign:'center'}}>
                         <div class="header">MyBigBleedingHeart</div>
                             <div class="meta">
                                 <span class="date">
@@ -16,8 +16,10 @@ function MBBHCard() {
                                 </span>
                             </div>
                                 <div class="description">
-                                    <button><a href='https://github.com/HereComePretzel/MyBigBleedingHeart'>Github</a></button><br/>
-                                    <button><a href='https://youtu.be/yuH26tIChaU'>Video Demo</a></button>
+                                    <a href='https://github.com/HereComePretzel/MyBigBleedingHeart'><Button primary>Github</Button></a>
+                                    <br></br>
+                                    <br></br>
+                                    <a href='https://youtu.be/yuH26tIChaU'><Button primary>Video Demo</Button></a>
                                 </div>
                     </div>
 

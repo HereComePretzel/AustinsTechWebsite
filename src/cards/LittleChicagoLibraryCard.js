@@ -1,9 +1,10 @@
 import React from 'react'
 import download from '../images/download.jpeg'
+import { Button } from 'semantic-ui-react'
 
 function LittleChicagoLibraryCard() {
     return (
-            <div class="ui card">
+            <div class="ui card" style={{textAlign: 'center'}}>
                 <div class="image">
                     <img src={download}/>
                 </div>
@@ -15,8 +16,10 @@ function LittleChicagoLibraryCard() {
                                 </span>
                             </div>
                                 <div class="description">
-                                    <button><a href='https://github.com/charliepatronr/little-chicago-library'>Github</a></button><br/>
-                                    <button><a href='https://youtu.be/nCTYq2pL7Sw'>Video Demo</a></button>
+                                    <a href='https://github.com/charliepatronr/little-chicago-library'><Button primary>Github</Button></a>
+                                    <br></br>
+                                    <br></br>
+                                    <a href='https://youtu.be/nCTYq2pL7Sw'><Button primary>Video Demo</Button></a>
                                 </div>
                     </div>
 

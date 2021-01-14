@@ -1,9 +1,10 @@
 import React from 'react'
 import download from '../images/download.jpeg'
+import { Button } from 'semantic-ui-react'
 
 function MusicLyricSearchCard() {
     return (
-            <div class="ui card">
+            <div class="ui card" style={{textAlign: 'center'}}>
                 <div class="image">
                     <img src={download}/>
                 </div>
@@ -15,7 +16,7 @@ function MusicLyricSearchCard() {
                                 </span>
                             </div>
                                 <div class="description">
-                                    <button><a href='https://github.com/HereComePretzel/MusicLyricSearch'>Github</a></button><br/>
+                                    <a href='https://github.com/HereComePretzel/MusicLyricSearch'><Button primary>Github</Button></a><br/>
                                 </div>
                     </div>
 

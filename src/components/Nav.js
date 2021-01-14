@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import './Nav.css'
+import { Container } from 'semantic-ui-react'
 
 function Nav() {
 
@@ -7,6 +9,7 @@ function Nav() {
     const handleItemClick = (e) => setActiveItem(e.target.name)
     
     return(
+   
     <div className='ui menu'>
         <a className='item'
             name='blogs'
@@ -37,10 +40,11 @@ function Nav() {
             Contact
         </a>
         <a href='https://github.com/HereComePretzel'><i className='big github icon' style={{color: 'black'}}></i></a>
-        <a href='https://www.linkedin.com/in/austin-oie-4a176519/'><i className='big linkedin icon' style={{color: '#0072B1'}}></i></a>
-        <a href='https://austinoie.medium.com/'><i className='big medium icon' style={{color: 'black'}}></i></a>
+        <a href='https://www.linkedin.com/in/austin-oie-4a176519/'><i className='big linkedin icon' style={{color:'#0072B1'}}></i></a>
+        <a href='https://austinoie.medium.com/'><i className='big medium icon' style={{color: ' black'}}></i></a>
 
     </div>
+
     )
 }
 

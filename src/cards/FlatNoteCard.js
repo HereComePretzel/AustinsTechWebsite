@@ -1,9 +1,10 @@
 import React from 'react'
 import download from '../images/download.jpeg'
+import { Button } from 'semantic-ui-react'
 
 function FlatNoteCard() {
     return (
-            <div class="ui card">
+            <div class="ui card" style={{textAlign:'center'}}>
                 <div class="image">
                     <img src={download}/>
                 </div>
@@ -15,9 +16,9 @@ function FlatNoteCard() {
                                 </span>
                             </div>
                                 <div class="description">
-                                    <button><a href='https://github.com/HereComePretzel/FlatNoteFE'>Github FE</a></button><br/>
-                                    <button><a href='https://github.com/HereComePretzel/FlatNoteBE'>Github BE</a></button><br/>
-                                    <button><a href='https://youtu.be/6wQ0sdCGp_A'>Video Demo</a></button>
+                                    <a href='https://github.com/HereComePretzel/FlatNoteFE'><Button primary>Github FE</Button></a><br></br><br></br>
+                                    <a href='https://github.com/HereComePretzel/FlatNoteBE'><Button primary>Github BE</Button></a><br></br><br></br>
+                                    <a href='https://youtu.be/6wQ0sdCGp_A'><Button primary>Video Demo</Button></a>
                                 </div>
                     </div>
 
